@@ -60,3 +60,19 @@ $("#swal-8").click(function() {
     timer: 3000,
   });
 });
+
+function konfirmasiHapus(url) {
+    swal({
+        title: 'Anda yakin ingin menghapus data ini?',
+        text: "Tindakan ini tidak dapat dibatalkan!",
+        icon: 'warning',
+        buttons: true,
+        dangerMode: true,
+    }).then((result) => {
+        if (result) {
+            var form = document.getElementById('form-hapus');
+            form.action = url;
+            form.submit();
+        }
+    });
+}

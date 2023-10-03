@@ -39,7 +39,7 @@
                                 <div class="float-left">
                                     <select class="form-control selectric">
                                         <option>Action For Selected</option>
-                                        <option>Delete Selected</option>
+                                        <option selected>Delete Selected</option>
                                     </select>
                                 </div>
                                 <div class="float-right">
@@ -77,7 +77,8 @@
                                                 <td>
                                                     <div class="custom-checkbox custom-control">
                                                         <input type="checkbox" data-checkboxes="mygroup"
-                                                            class="custom-control-input" id="checkbox-2">
+                                                            class="custom-control-input" id="checkbox-2"
+                                                            name="selected_users[]" value="{{ $user->id }}">
                                                         <label for="checkbox-2" class="custom-control-label">&nbsp;</label>
                                                     </div>
                                                 </td>
